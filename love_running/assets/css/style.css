@@ -36,6 +36,7 @@ header a {
     letter-spacing: 2px;
     color: #252525;
 }
+/* list-style: none removes bullets from list in header */
  header ul {
     text-size-adjust:110%;
     letter-spacing: 4px;
@@ -50,7 +51,16 @@ header li{
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
-/* Main content */
+nav{
+    position:absolute;
+    background-color: #ffffff;
+    width:100vw;
+    left:0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 20px #3a3a3a;
+    display:none;
+}
+    /* Main content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
