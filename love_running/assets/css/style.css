@@ -46,7 +46,7 @@ header ul {
   text-size-adjust: 110%;
   letter-spacing: 4px;
   list-style: none;
-  width: 70px
+  width: 700px
 }
 header li {
   margin-bottom: 1em
@@ -117,5 +117,11 @@ footer {
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
+    }
+}
+
+@media (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
     }
 }
