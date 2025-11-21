@@ -233,3 +233,25 @@ nav {
         border-bottom: 1px solid #3a3a3a;
     }
 }
+
+/*media query: large desktops and larger (1200px and up) */
+@media (min-width: 1200px) {
+  #benefits {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+  }
+
+  #benefits > div {
+    flex: 1;
+  }
+
+  #benefits-image {
+    order : 1;
+    align-self: center;
+  }
+
+  #benefits-mental {
+    order : 2
+  }
+}
