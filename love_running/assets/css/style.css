@@ -85,6 +85,7 @@ nav {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
 }
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
@@ -158,6 +159,36 @@ nav {
       right:50px;
     }
     
+  }
+
+  /*Reasons styling */
+  #reasons h2 {
+    font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #benefits div {
+    line-height:20px;
+    margin-bottom: 20px;
+  }
+
+  #benefits p {
+    padding: 0 20px;
+  }
+
+  #benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+  }
+
+  #reasons h3 {
+    display: inline-block;
+  }
+
+  #reasons {
+    margin: 20px auto;
+    width: 90%;
   }
 
 @media (min-width: 992px) {
