@@ -29,36 +29,38 @@ Urban running, trail running, Dublin docklands and Phoenix Park."/>
             </ul>
         </nav>
     </header>
-      
-    <main id="signup-main">
+    <main>
         <section id="signup">
-            <form id="signup-form" action="https://formdump.codeinstitute.net" method="post">
-                <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you signed up!</h2>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" class="text-input" name="first_name" placeholder="First Name" required><br>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" class="text-input" name="last_name" placeholder="Last Name" required><br>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="text-input" name="email" placeholder="Email Address" required><br>
-                    <div class="radio-buttons">
-                        <div id="road">
-                            <input type="radio" id="road" name="running_preference" value="road" required>
-                            <label for="road">Road</label><br>
-                        </div>
-                        <div id="trail">
-                            <input type="radio" id="trail" name="running_preference" value="trail">
-                            <label for="trail">Trail</label><br>  
-                        </div>  
-                        <div id="both">
-                            <input type="radio" id="both" name="running_preference" value="both">
-                            <label for="both">Both</label><br>
-                        </div>
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
                     </div>
-                    <input type="submit" class="join-button" value="Submit">
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" name="running_preference" id="trail" value="trail" required>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both" required>
+                    </div>
+                </div>
+                <button type="submit" class="join-button">Let's Run!</button>
             </form>
         </section>
-
     </main>
+
     <footer>
         <ul id="social-networks">
             <li>

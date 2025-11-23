@@ -192,26 +192,34 @@ nav {
     line-height: 0;
 }
 
-/* Sign Up Styles */
+/* Sign Up Styles
 #signup-main {
     display: flex;
     flex-direction: column;
 }
-    
+    */ 
 
 /* Form */
 #signup {
     background-image: url("../images/signup-image.webp");
     background-size: cover;
     background-position: 75%;
-    padding: 20px 10% 0 10%;
+    padding: 20px 10vw 0 1vw;
     flex-grow: 1;
+    position: relative;
+    min-height: calc(100vh - 79px);
 }
+
+
 
 #signup-form {
     color: #ffffff;
     background-color:rgba(60,60,60,0.6);
     padding: 30px;
+    position:absolute;
+    top: 76px;
+    max-width: 400px;
+    margin: 20px 10px
    
 }
 
@@ -286,7 +294,7 @@ nav {
         display: block;
         position: relative;
         box-shadow: none;
-        width: 300px;
+        width: 320px;
         padding-right: 1rem;
     }
 
@@ -337,8 +345,10 @@ nav {
     /* Sign up Section on tablets and larger */
 
      #signup {
+      
         background-position: center;
         position: relative;
+        min-height: calc(100vh - 79px); 
      }
     
     #signup-form {
@@ -357,10 +367,6 @@ nav {
         color: #454b1b;
     }
 
-
-    footer {
-      height: 100px;
-    }
   }
 /* Media query: desktops and larger (992px and up) */
 
